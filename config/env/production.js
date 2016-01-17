@@ -3,6 +3,7 @@
 // TODO: Create custom builds of some components.
 
 module.exports = {
+  sslOnly: true,
   assets: {
     client: {
       lib: {

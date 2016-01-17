@@ -10,6 +10,7 @@
     "consolidate": "0.13.1",
     "express": "4.13.3",
     "express-jwt": "3.3.0",
+    "express-sslify": "1.0.1",
     "glob": "6.0.1",
     "gulp": "3.9.0",
     "gulp-concat": "2.6.0",

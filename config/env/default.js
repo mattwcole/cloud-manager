@@ -7,6 +7,7 @@ module.exports = {
   appPassword: process.env.PASSWORD,
   jwtTimeout: 10 * 60 * 1000,
   livereload: false,
+  sslOnly: false,
   aws: {
     apiVersion: '2015-12-20',
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
