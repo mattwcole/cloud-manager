@@ -10,7 +10,7 @@ module.exports = {
           'public/lib/angular/angular.min.js',
           'public/lib/angular-ui-router/release/angular-ui-router.min.js',
           'public/lib/angular-animate/angular-animate.min.js',
-          'public/lib/angular-bootstrap/ui-bootstrap.min.js',
+          'public/lib/angular-bootstrap/ui-bootstrap-tpls.min.js',
           'public/lib/angular-jwt/dist/angular-jwt.min.js',
           'public/lib/angular-socket-io/socket.min.js',
           'public/lib/ngstorage/ngStorage.min.js',
