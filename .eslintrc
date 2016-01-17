@@ -1,0 +1,12 @@
+{
+  "extends": ["node-style-guide"],
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "strict": [2, "global"],
+    "no-trailing-spaces": 1,
+    "eol-last": 1
+  }
+}

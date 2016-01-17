@@ -1,0 +1,12 @@
+<div uib-collapse="!vm.showAlert()" class="alert-container">
+  <div class="alert alert-dismissible alert-{{(vm.alertType())}}" ng-if="vm.showAlert()" role="alert">
+    <button type="button" class="close" ng-click="vm.closeAlert()">
+      <i class="fa fa-times"></i>
+    </button>
+    <strong>{{vm.alert.title}}</strong>
+    <a class="alert-link" href="#"><i class="fa fa-files-o fa-lg"></i></a>
+    <div class="truncate">
+      <span>{{vm.alert.message || '&#9785;'}}</span>
+    </div>
+  </div>
+</div>

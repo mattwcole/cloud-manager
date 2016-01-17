@@ -1,0 +1,44 @@
+/*TODO: Browser support.*/
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vertical-center {
+  min-height: 50%;
+  min-height: 50vh;
+
+  display: flex;
+  align-items: center;
+}
+
+section[ui-view].ng-enter {
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.alert-container {
+  overflow: hidden;
+}
+
+.alert.ng-enter {
+  -webkit-animation: fadeInDown 0.5s;
+  animation: fadeInDown 0.5s;
+}
+
+.alert.ng-leave {
+  -webkit-animation: fadeOutUp 0.5s;
+  animation: fadeOutUp 0.5s;
+}
+
+.cm-server.ng-enter {
+  -webkit-animation: zoomIn 1s;
+  animation: zoomIn 1s;
+}
+
+.cm-server.ng-enter-stagger {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}

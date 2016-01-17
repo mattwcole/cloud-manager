@@ -1,0 +1,15 @@
+<section class="container">
+  <cm-alert alert-body="vm.alert"></cm-alert>
+  <h1>CloudFormation Stacks</h1>
+  <div class="vertical-center" ng-if="vm.loadingServers">
+    <div class="text-center col-xs-4 col-xs-offset-4">
+      <i class="fa fa-cog fa-spin fa-5x"></i>
+      <h4><em>Loading servers...</em></h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 cm-server" ng-repeat="server in vm.servers">
+      <cm-server server="server"></cm-server>
+    </div>
+  </div>
+</section>

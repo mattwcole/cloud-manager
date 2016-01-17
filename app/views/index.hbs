@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link href="{{favicon}}" rel="shortcut icon">
+    {{#each cssFiles}}
+    <link rel="stylesheet" href="{{this}}">
+    {{/each}}
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body ng-app="app">
+    <ng-include src="'public/views/header.html'"></ng-include>
+    <section ui-view></section>
+    {{#each jsFiles}}
+    <script type="text/javascript" src="{{this}}"></script>
+    {{/each}}
+    {{#if livereload}}
+    <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+    {{/if}}
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+  </body>
+
+</html>

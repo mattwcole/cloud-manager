@@ -1,0 +1,23 @@
+<div class="panel panel-primary cm-server">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+      {{vm.server.name}}
+      <span class="label pull-right" ng-class="'label-' + vm.getStatusColour()">{{vm.server.status}}</span>
+    </h3>
+  </div>
+  <div class="panel-body">
+    <cm-alert alert-body="vm.alert"></cm-alert>
+    <p ng-show="vm.server.description"><em>{{vm.server.description}}</em></p>
+    <div class="form-group">
+      <button type="button" class="btn btn-success" ng-click="vm.createServer()"
+              ng-show="vm.canCreate()">
+        Create
+      </button>
+      <button type="button" class="btn btn-danger" ng-click="vm.deleteServer()"
+              ng-show="vm.canDelete()">
+        Delete
+      </button>
+    </div>
+    <uib-progressbar class="progress-striped active" type="{{vm.getStatusColour()}}" ng-show="vm.isBusy()"></uib-progressbar>
+  </div>
+</div>

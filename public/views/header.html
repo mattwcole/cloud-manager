@@ -1,0 +1,27 @@
+<header>
+  <nav class="navbar navbar-default" ng-controller="HeaderController as vm">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" ng-click="vm.isCollapsed = !vm.isCollapsed" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Cloud Manager</a>
+      </div>
+      <div class="navbar-collapse" collapse="vm.isCollapsed" ng-init="vm.isCollapsed = true">
+        <ul class="nav navbar-nav">
+          <li ui-sref-active="active" ng-show="vm.isAuthenticated()"><a ui-sref="home">Home</a></li>
+          <li ui-sref-active="active" ng-hide="vm.isAuthenticated()"><a ui-sref="login">Login</a></li>
+          <li ui-sref-active="active"><a ui-sref="about">About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li ng-show="vm.isAuthenticated()">
+            <a href="#" class="navbar-link" ng-click="vm.logout()">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,16 @@
+{
+  "extends": ["eslint:recommended", "angular"],
+  "root": true,
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "strict": [2, "function"],
+    "no-trailing-spaces": 1,
+    "eol-last": 1
+  },
+  "globals": {
+    "AWS": true,
+    "_": true
+  }
+}
