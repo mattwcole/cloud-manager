@@ -9,18 +9,3 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - g++-4.8
-deploy:
-  provider: heroku
-  api_key:
-    secure: >
-      JYIWxDkSETdPDslwVRoMXVLLHts+NLT20x579HcnCIDQ8+4LNODrHp1zMBd5jG0O
-      YwyHKZ7zC7ODAZTnz/bRpP6R0/wVaL1bQYvULebA60Xmr3bWJPQ3OpHmYbvDg8SF
-      ZUW8moZJn9TvtU9J7qzMRwomg0ElDW0mBOetR6O44IEwi4mY2Kv3eVlmdhuXELlT
-      6EmRZn8gY5+/0NdBA61FDpEire08of/5+L1bpsyJqTjGcpjgaeUlMCII3OMXtgDJ
-      CFmQJxuXstbY4P1nSJjNyCpr+gVJkvYyGKg7bDIq1Lo1z2oRGyMRAhZMU1V0A5C5
-      UJK3ucc69xVHnySxGqvrhT1vtKkE3MmZwtEXfZGOzO+pugTE2pZHz/CJkohdvHXZ
-      VRDPmU0ze4m+jQuL9gVFKP6v1iaMVSTr7noNcRZ4Cr7uLKH1TNv5xO3FMRcA3BOQ
-      6HVx0nzbxQ9lE+2QChHwlL3i7+5H6DYAbpWgBikS+wFMTkKanJM5OySu+NDMv32r
-      cq4CX3A7loZLF/7Ky8PvDa08o5PU6zS12ZD1I5Zla2Bq3gu5TgnHnE4VxGzmbMjZ
-      gXTN1nWVdxb8wN2Qjc7+EjgWgw30XWoqZ5qB73cQAfHoG4o4aW7OOxT+RWggFRFT
-      z0rf4XkolZWabi9J82wO9jrrDgAHDrFNfil8nmyzH0Y=
