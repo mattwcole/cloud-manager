@@ -1,6 +1,6 @@
 {
   "name": "cloud-manager",
-  "description": "Simple web app for managing AWS infrastructure",
+  "description": "Web app for managing AWS infrastructure via CloudFormation",
   "main": "server.js",
   "authors": [
     "Matt Cole"
@@ -18,17 +18,17 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.8",
-    "angular-ui-router": "~0.2.15",
-    "angular-bootstrap": "~0.14.3",
-    "angular-jwt": "~0.0.9",
-    "animate.css": "~3.5.0",
-    "aws-sdk": "aws-sdk-js#~2.2.25",
-    "angular-animate": "~1.4.8",
+    "angular": "1.4.8",
+    "angular-ui-router": "0.2.15",
+    "angular-bootstrap": "0.14.3",
+    "angular-jwt": "0.0.9",
+    "animate.css": "3.5.0",
+    "aws-sdk": "2.2.25",
+    "angular-animate": "1.4.8",
     "bootswatch-dist": "3.3.6-flatly",
-    "ngstorage": "~0.3.10",
-    "lodash": "~3.10.1",
-    "angular-socket-io": "~0.7.0",
-    "font-awesome": "fontawesome#~4.5.0"
+    "ngstorage": "0.3.10",
+    "lodash": "3.10.1",
+    "angular-socket-io": "0.7.0",
+    "font-awesome": "4.5.0"
   }
 }
