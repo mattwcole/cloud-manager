@@ -8,6 +8,7 @@
     "aws-sdk": "2.2.25",
     "body-parser": "1.14.2",
     "bower": "1.7.2",
+    "chef-api": "0.5.4",
     "consolidate": "0.13.1",
     "express": "4.13.3",
     "express-jwt": "3.3.0",
@@ -30,7 +31,6 @@
     "sqs-consumer": "3.1.0"
   },
   "devDependencies": {
-    "chef-api": "0.5.4",
     "eslint-config-angular": "0.4.0",
     "eslint-config-node-style-guide": "3.0.0",
     "eslint-plugin-angular": "0.15.0",
