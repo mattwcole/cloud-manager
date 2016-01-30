@@ -38,7 +38,7 @@
             NotificationARNs: [config.aws.snsTopicArn],
             Parameters: snapshot && [
               {
-                ParameterKey: 'DataSnapshotId',
+                ParameterKey: 'DataVolumeSnapshotId',
                 ParameterValue: snapshot.SnapshotId
               }
             ]
@@ -64,7 +64,7 @@
       return awsService.listObjects(params).then(
         function success(data) {
           return _.map(data.Contents, function(template) {
-            return _.trimRight(template.Key, '.json');
+            return _.trimEnd(template.Key, '.json');
           });
         }
       );

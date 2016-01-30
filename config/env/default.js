@@ -5,7 +5,7 @@ module.exports = {
   secret: process.env.SECRET,
   appUsername: process.env.USERNAME,
   appPassword: process.env.PASSWORD,
-  jwtTimeout: 10 * 60 * 1000,
+  jwtTimeout: 20 * 60 * 1000,
   livereload: false,
   sslOnly: false,
   aws: {
@@ -16,6 +16,11 @@ module.exports = {
     guestRoleArn: process.env.AWS_GUEST_ROLE_ARN,
     adminRoleArn: process.env.AWS_ADMIN_ROLE_ARN,
     sqsQueueUrl: process.env.AWS_SQS_QUEUE_URL
+  },
+  chef: {
+    serverUrl: process.env.CHEF_SERVER_URL,
+    clientName: process.env.CHEF_CLIENT_NAME,
+    clientKey: process.env.CHEF_CLIENT_KEY
   },
   assets: {
     client: {

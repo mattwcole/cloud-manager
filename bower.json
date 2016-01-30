@@ -27,7 +27,7 @@
     "angular-animate": "1.4.8",
     "bootswatch-dist": "3.3.6-flatly",
     "ngstorage": "0.3.10",
-    "lodash": "3.10.1",
+    "lodash": "4.0.0",
     "angular-socket-io": "0.7.0",
     "font-awesome": "4.5.0"
   }

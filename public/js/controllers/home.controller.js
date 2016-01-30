@@ -11,7 +11,7 @@
     vm.servers = [];
     vm.loadingServers = false;
 
-    socket.subscribe($scope, 'cf-notification', onNotification);
+    socket.subscribe($scope, 'cfn-message', onMessage);
     loadServers();
 
     function loadServers() {
@@ -33,9 +33,8 @@
       );
     }
 
-    function onNotification(event, data) {
-      var notification = angular.fromJson(data);
-      var message = extractMessage(notification);
+    function onMessage(event, data) {
+      var message = extractMessage(angular.fromJson(data).Message);
 
       var server = _.find(vm.servers, {name: message.StackName});
       if (server) {
@@ -43,12 +42,12 @@
       }
     }
 
-    function extractMessage(notification) {
+    function extractMessage(messageData) {
       var kvpRegex = /(\S+?)='(.*?)'+/g;
       var message = {};
       var matches;
 
-      while((matches = kvpRegex.exec(notification.Message))) {
+      while ((matches = kvpRegex.exec(messageData))) {
         message[matches[1]] = matches[2];
       }
 

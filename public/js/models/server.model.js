@@ -23,7 +23,15 @@
     function update(message) {
       var _this = this;
 
-      _this.status = message.ResourceStatus;
+      if (message.ResourceType === "AWS::CloudFormation::Stack")
+      {
+        _this.status = message.ResourceStatus;
+        _this.step = null;
+      } else {
+        var resourceStatus = _.replace(message.ResourceStatus, '_', ' ');
+        var resourceType = _.last(message.ResourceType.split('::'));
+        _this.step =  resourceType + ': ' + _.lowerCase(resourceStatus);
+      }
     }
   }
 }());

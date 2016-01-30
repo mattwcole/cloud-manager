@@ -7,7 +7,7 @@
   </div>
   <div class="panel-body">
     <cm-alert alert-body="vm.alert"></cm-alert>
-    <p ng-show="vm.server.description"><em>{{vm.server.description}}</em></p>
+    <p><em>{{vm.server.description}}</em></p>
     <div class="form-group">
       <button type="button" class="btn btn-success" ng-click="vm.createServer()"
               ng-show="vm.canCreate()">
@@ -19,5 +19,6 @@
       </button>
     </div>
     <uib-progressbar class="progress-striped active" type="{{vm.getStatusColour()}}" ng-show="vm.isBusy()"></uib-progressbar>
+    <p><span>{{vm.server.step}}</span></p>
   </div>
 </div>
