@@ -38,11 +38,13 @@ function mergeLocalConfig(config) {
 }
 
 function mergeConfig(destinationConfig, sourceConfig) {
-  _.merge(destinationConfig, sourceConfig, function(prev, next) {
-    if (_.isArray(next)) {
-      return next;
+  _.mergeWith(destinationConfig, _.cloneDeep(sourceConfig),
+    function(objValue, srcValue) {
+      if (_.isArray(objValue)) {
+        return srcValue;
+      }
     }
-  });
+  );
 }
 
 function attachHelpers(config) {

@@ -16,7 +16,7 @@ module.exports = {
           'public/lib/angular-socket-io/socket.min.js',
           'public/lib/ngstorage/ngStorage.min.js',
           'public/lib/aws-sdk/dist/aws-sdk.min.js',
-          'public/lib/lodash/lodash.min.js'
+          'public/lib/lodash/dist/lodash.min.js'
         ],
         css: [
           'public/lib/bootswatch-dist/css/bootstrap.min.css',

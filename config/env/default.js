@@ -34,7 +34,7 @@ module.exports = {
           'public/lib/angular-socket-io/socket.js',
           'public/lib/ngstorage/ngStorage.js',
           'public/lib/aws-sdk/dist/aws-sdk.js',
-          'public/lib/lodash/lodash.js'
+          'public/lib/lodash/dist/lodash.js'
         ],
         css: [
           'public/lib/bootswatch-dist/css/bootstrap.css',
