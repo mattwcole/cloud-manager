@@ -83,7 +83,7 @@
       return awsService.describeSnapshots(params).then(
         function success(data) {
           var snapshots = _.sortBy(data.Snapshots, function(s) {return s.StartTime});
-          return _.first(snapshots);
+          return _.last(snapshots);
         }
       );
     }
